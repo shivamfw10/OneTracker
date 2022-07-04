@@ -1,0 +1,45 @@
+{
+  "Ticket": [
+    {
+      "ticketid": "25",
+      "department": "Dept2",
+      "category": "Cat2",
+      "subCategory": "Subcat2",
+      "customer": "Anurag",
+      "issueTime": "11:00",
+      "issueDescription": "Heating",
+      "emailId": "vishvashivam@gmail.com",
+      "escEmail": "shivam@euromonitor.com",
+      "teamLink": "http://localhost:4203/",
+      "id": 1
+    },
+    {
+      "ticketid": "26",
+      "department": "Department2",
+      "category": "Technical",
+      "subCategory": "Hardware",
+      "customer": "Vishnu",
+      "issueTime": "18:00",
+      "subject": "When system on then heat",
+      "issueDescription": "Heat Issue",
+      "emailId": "vishnu@gmail.com",
+      "escEmail": "euro@gmail.com",
+      "teamLink": "http://localhost:4203/",
+      "id": 2
+    },
+    {
+      "ticketid": "27",
+      "department": "Research",
+      "category": "Market",
+      "subCategory": "Data",
+      "customer": "Pepsi",
+      "issueTime": "18:00",
+      "subject": "Data fetch error",
+      "issueDescription": "Data loading failed",
+      "emailId": "pepsi@gmail.com",
+      "escEmail": "euro@gmail.com",
+      "teamLink": "https://angular.io/docs",
+      "id": 3
+    }
+  ]
+}

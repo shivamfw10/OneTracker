@@ -1,0 +1,19 @@
+<p>
+    <mat-toolbar>
+        <a mat-stroked-button routerLink="/add">Add Ticket</a>
+        <a mat-stroked-button routerLink="/dashboard">Dashboard</a>
+        <a mat-stroked-button routerLink="/report">Report</a>
+        <a mat-stroked-button routerLink="/rca">Root Cause Analysis</a>
+        <div class="spacer"></div>
+        <form>
+          <mat-form-field mat-form-field appearance="outline">
+              <input type="text" matInput placeholder="Search" name="search">
+              <button matSuffix mat-button><mat-icon >search</mat-icon></button>
+          </mat-form-field>
+          </form>
+    </mat-toolbar>
+</p>
+<router-outlet></router-outlet>
+  
+
+  

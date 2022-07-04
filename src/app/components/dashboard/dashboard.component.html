@@ -1,0 +1,50 @@
+<app-header></app-header>
+<mat-grid-list cols="4" rowHeight="130px" gutterSize="30px">
+    <mat-grid-tile>
+    <mat-card class="card">
+        <mat-card-title>
+            Total No. of Tickets
+        </mat-card-title>
+        <mat-card-content>
+            <span class="card_num">20</span>
+            <mat-icon style="font-size:80px;">local_activity</mat-icon>
+        </mat-card-content>
+    </mat-card>
+</mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="card">
+            <mat-card-title>
+                Open Tickets
+            </mat-card-title>
+            <mat-card-content>
+                <span class="card_num">20</span>
+                <mat-icon style="font-size:80px;">drafts</mat-icon>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="card">
+            <mat-card-title>
+                Ticket Closed in 4hrs
+            </mat-card-title>
+            <mat-card-content>
+                <span class="card_num">20</span>
+                <mat-icon style="font-size:80px;">disabled_by_default</mat-icon>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="card">
+            <mat-card-title>
+                Ticket Crossed 4hrs
+            </mat-card-title>
+            <mat-card-content>
+                <span class="card_num">20</span>
+                <mat-icon style="font-size:80px;">timer_off</mat-icon>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    
+  </mat-grid-list>
+  <button mat-raised-button color="primary" routerLink="/landingpage">Back</button>
+<router-outlet></router-outlet>
