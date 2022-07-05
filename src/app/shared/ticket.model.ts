@@ -13,4 +13,5 @@ export class Ticket {
     teamLink:string;
     status:string;
     lastModifiedDate:string;
+    ticketage:string;
 }

@@ -17,17 +17,18 @@ export class DatalistComponent implements OnInit {
   'department',
   'category',
   'subCategory',
-  'emailId',
+  'status',
   'customer',
   'issueTime',
-  'escEmail',
-  'teamLink'];
+  'ticketage',
+  'lastModifiedDate'];
   data:Ticket[]=[];
   constructor(private ticketService:TicketsService){}
   ngOnInit(): void {
     this.ticketService.getTickets().subscribe(response=>{
       this.data=response;
       console.log(this.data);
+      console.log(this.data.length)
     },err=>{
       console.log(err);
     })
