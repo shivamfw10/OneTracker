@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { Ticket } from 'src/app/shared/ticket.model';
 import { TicketsService } from 'src/app/shared/service/tickets.service';
+import { tick } from '@angular/core/testing';
 
 @Component({
   selector: 'app-edit-ticket',
@@ -17,7 +18,7 @@ export class EditTicketComponent implements OnInit {
 
   ngOnInit(): void {
     this.ticketForm=this.formBuilder.group({
-      ticketId:['',Validators.required ],
+      ticketid:['',Validators.required],
       department:['',Validators.required],
       category:['',Validators.required],
       subCategory:['',Validators.required],
@@ -45,7 +46,7 @@ export class EditTicketComponent implements OnInit {
   OnFormSubmit(ticketForm:any){
     this.ticketService.EditTicket(this.route.snapshot.params['id'],this.ticketForm.value).subscribe(response=>{
      const id=response['id'];
-     this.router.navigate(['/viewticket']);
+     this.router.navigate(['/landingpage']);
     },error=>{
      console.log(error);
     })

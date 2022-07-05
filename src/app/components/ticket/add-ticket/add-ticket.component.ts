@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 
 import { Router } from '@angular/router';
-import { TicketsService } from './../../../shared/service/tickets.service';
+import { TicketsService } from 'src/app/shared/service/tickets.service';
 
 @Component({
   selector: 'app-add-ticket',
@@ -25,7 +25,10 @@ export class AddTicketComponent implements OnInit {
       issueDescription:['',Validators.required],
       emailId:['',Validators.required],
       escEmail:['',Validators.required],
-      teamLink:['',Validators.required]  
+      teamLink:['',Validators.required],
+      status:['open'],
+      lastModifiedDate:[''],
+      ticketage:['']  
     })
   }
 
@@ -34,10 +37,7 @@ export class AddTicketComponent implements OnInit {
     // this.isDataLoading=true;
      this.ticketService.addTicket(form).subscribe(response=>{
       const id=response['ticketid'];
-      this.router.navigate(['/landingpage']);
-      console.log(id);
-      console.log("data added Successfully");
-     
+      this.router.navigate(['/landingpage']);   
      },error=>{
       console.log(error);
      })

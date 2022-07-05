@@ -6,10 +6,7 @@
          <p>
              <mat-form-field class="example-full-width-2" appearance="fill">
                  <mat-label>Id</mat-label>
-                 <input matInput placeholder="Ticket ID" formControlName="ticketid" value="{{ticket.ticketid}}">
-                 <mat-error>
-                    <!-- <span *ngIf="!empForm.get('name').valid && empForm.get('name').touched">Please Enter Name</span> -->
-                 </mat-error>
+                 <input matInput placeholder="Ticket ID" value="{{ticket.ticketid}}" readonly>
               </mat-form-field>
         
              <mat-form-field class="example-full-width-2" appearance="fill">
