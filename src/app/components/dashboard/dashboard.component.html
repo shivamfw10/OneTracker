@@ -6,7 +6,7 @@
             Total No. of Tickets
         </mat-card-title>
         <mat-card-content>
-            <span class="card_num">20</span>
+            <span class="card_num">{{this.data.length}}</span>
             <mat-icon style="font-size:80px;">local_activity</mat-icon>
         </mat-card-content>
     </mat-card>
@@ -17,7 +17,7 @@
                 Open Tickets
             </mat-card-title>
             <mat-card-content>
-                <span class="card_num">20</span>
+                <span class="card_num">{{this.countOpenTicket(this.data)}}</span>
                 <mat-icon style="font-size:80px;">drafts</mat-icon>
             </mat-card-content>
         </mat-card>
@@ -28,7 +28,7 @@
                 Ticket Closed in 4hrs
             </mat-card-title>
             <mat-card-content>
-                <span class="card_num">20</span>
+                <span class="card_num">{{this.countCloseFour(this.data)}}</span>
                 <mat-icon style="font-size:80px;">disabled_by_default</mat-icon>
             </mat-card-content>
         </mat-card>
@@ -39,7 +39,7 @@
                 Ticket Crossed 4hrs
             </mat-card-title>
             <mat-card-content>
-                <span class="card_num">20</span>
+                <span class="card_num">{{this.countCrossFour(this.data)}}</span>
                 <mat-icon style="font-size:80px;">timer_off</mat-icon>
             </mat-card-content>
         </mat-card>
