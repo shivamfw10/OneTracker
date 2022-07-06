@@ -32,6 +32,15 @@ export class EditTicketComponent implements OnInit {
       lastModifiedDate:['',Validators.required]
     });
     this.getTicket(this.route.snapshot.params['id']);
+    this.ticketForm.get('department').disable();
+    this.ticketForm.get('category').disable();
+    this.ticketForm.get('subCategory').disable();
+    this.ticketForm.get('customer').disable();
+    this.ticketForm.get('issueTime').disable();
+    this.ticketForm.get('subject').disable();
+    this.ticketForm.get('department').disable();
+    this.ticketForm.get('escEmail').disable();
+   
   }
 
   public getTicket(id:any)

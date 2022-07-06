@@ -11,4 +11,5 @@ input[type=text]{
 }
 .mat-form-field-appearance-outline{
     padding: 0px;
+    border: none;
 }

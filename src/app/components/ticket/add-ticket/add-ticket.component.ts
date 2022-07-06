@@ -29,12 +29,10 @@ export class AddTicketComponent implements OnInit {
       status:['open'],
       lastModifiedDate:[''],
       ticketage:['']  
-    })
+    });
   }
-
   OnFormSubmit(form: NgForm)
   {
-    // this.isDataLoading=true;
      this.ticketService.addTicket(form).subscribe(response=>{
       const id=response['ticketid'];
       this.router.navigate(['/landingpage']);   

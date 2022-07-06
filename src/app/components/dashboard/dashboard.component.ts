@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Router } from '@angular/router';
 import { Ticket } from 'src/app/shared/ticket.model';
 import { TicketsService } from 'src/app/shared/service/tickets.service';
 
@@ -15,8 +14,6 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.ticketService.getTickets().subscribe(response=>{
       this.data=response;
-      console.log(this.data);
-      console.log(this.data.length)
     },err=>{
       console.log(err);
     })
