@@ -17,3 +17,10 @@
   .mat-form-field{
     width: 80%;
   }
+  .continer-fluid{
+    background-image: url('https://img.freepik.com/free-photo/global-communication-background-business-network-design_53876-160238.jpg?t=st=1657528600~exp=1657529200~hmac=d1340f02c4fce306b0b551874639f1c9efa1b857433bdb773c498a366f7ab44a&w=996');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
